@@ -13,15 +13,15 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <label for="kode_barang">Kode Barang</label>
+              <label for="kode_barang">Kode Product</label>
               <input type="text" class="form-control" id="kode_barang" name="kode_barang" value="{{ isset($barang) ? $barang->kode_barang : '' }}">
             </div>
             <div class="form-group">
-              <label for="nama_barang">Nama Barang</label>
+              <label for="nama_barang">Nama Product</label>
               <input type="text" class="form-control" id="nama_barang" name="nama_barang" value="{{ isset($barang) ? $barang->nama_barang : '' }}">
             </div>
             <div class="form-group">
-              <label for="id_kategori">Kategori Barang</label>
+              <label for="id_kategori">Kategori Product</label>
 							<select name="id_kategori" id="id_kategori" class="custom-select">
 								<option value="" selected disabled hidden>-- Pilih Kategori --</option>
 								@foreach ($kategori as $row)
@@ -30,11 +30,11 @@
 							</select>
             </div>
             <div class="form-group">
-              <label for="harga">Harga Barang</label>
+              <label for="harga">Harga Product</label>
               <input type="number" class="form-control" id="harga" name="harga" value="{{ isset($barang) ? $barang->harga : '' }}">
             </div>
             <div class="form-group">
-              <label for="jumlah">Jumlah Barang</label>
+              <label for="jumlah">Jumlah Product</label>
               <input type="number" class="form-control" id="jumlah" name="jumlah" value="{{ isset($barang) ? $barang->jumlah : '' }}">
             </div>
           </div>
